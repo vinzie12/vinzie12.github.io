@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="520" viewBox="0 0 520 520" role="img" aria-label="Profile placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2dd4bf" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#60a5fa" stop-opacity="0.35"/>
+    </linearGradient>
+    <radialGradient id="r" cx="30%" cy="25%" r="70%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="520" height="520" rx="28" fill="#0f1a2d"/>
+  <rect width="520" height="520" rx="28" fill="url(#g)"/>
+  <rect width="520" height="520" rx="28" fill="url(#r)"/>
+
+  <circle cx="260" cy="212" r="84" fill="#0b1220" fill-opacity="0.65" stroke="#ffffff" stroke-opacity="0.18"/>
+  <path d="M132 454c20-88 96-138 128-138s108 50 128 138" fill="#0b1220" fill-opacity="0.55" stroke="#ffffff" stroke-opacity="0.18" stroke-linecap="round"/>
+
+  <text x="260" y="72" text-anchor="middle" fill="#e9eef8" fill-opacity="0.9" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700">
+    Add your professional photo
+  </text>
+  <text x="260" y="96" text-anchor="middle" fill="#a9b3c7" font-family="Inter,Arial,sans-serif" font-size="12">
+    Replace assets/img/profile-placeholder.svg
+  </text>
+</svg>

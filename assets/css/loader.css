@@ -1,0 +1,118 @@
+.preloader{
+  position:fixed;
+  inset:0;
+  background:var(--bg);
+  color:var(--text);
+  display:grid;
+  place-items:center;
+  z-index:9998;
+  transition:opacity 260ms ease, visibility 260ms ease;
+  overflow:hidden;
+}
+
+.preloader-inner{
+  display:grid;
+  justify-items:center;
+  gap:12px;
+  position:relative;
+  z-index:1;
+}
+
+.preloader-text{margin:0; color:var(--muted); font-size:13px}
+
+.preloader.is-hidden{opacity:0; visibility:hidden; pointer-events:none}
+
+.preloader::before{
+  content:"";
+  position:absolute;
+  inset:-20%;
+  background:
+    radial-gradient(900px 520px at 20% 35%, rgba(45,212,191,0.14), transparent 60%),
+    radial-gradient(900px 520px at 78% 40%, rgba(96,165,250,0.14), transparent 60%),
+    radial-gradient(1100px 720px at 50% 70%, rgba(167,139,250,0.10), transparent 60%);
+  filter:saturate(1.05);
+  opacity:0.9;
+  pointer-events:none;
+}
+
+html[data-theme="light"] .preloader::before{
+  background:
+    radial-gradient(900px 520px at 20% 35%, rgba(45,212,191,0.10), transparent 62%),
+    radial-gradient(900px 520px at 78% 40%, rgba(96,165,250,0.10), transparent 62%),
+    radial-gradient(1100px 720px at 50% 70%, rgba(139,92,246,0.08), transparent 62%);
+  opacity:0.75;
+}
+
+.intro-gear-wrap{
+  width:min(340px, 56vw);
+  height:min(340px, 56vw);
+  aspect-ratio:1 / 1;
+  position:relative;
+  transform-style:preserve-3d;
+  perspective:900px;
+  will-change:transform, opacity;
+}
+
+.intro-gear{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.intro-gear-front{
+  transform:translateZ(30px);
+  filter:drop-shadow(0 30px 70px rgba(0,0,0,0.45));
+}
+
+.intro-gear-back{
+  transform:translateZ(-26px) rotateZ(-10deg);
+  opacity:0.25;
+  filter:blur(0.2px);
+}
+
+.preloader.is-playing .intro-gear-wrap{
+  animation:introGearZoom 1400ms cubic-bezier(0.2, 0.8, 0.12, 1) forwards;
+}
+
+.preloader.is-playing .intro-gear-front{
+  animation:introGearSpin 720ms linear infinite;
+}
+
+.preloader.is-playing .intro-gear-back{
+  animation:introGearSpinReverse 980ms linear infinite;
+}
+
+.preloader.is-playing .preloader-text{
+  animation:introTextFade 900ms ease forwards;
+}
+
+@keyframes introGearSpin{
+  to{transform:translateZ(30px) rotate(360deg)}
+}
+
+@keyframes introGearSpinReverse{
+  to{transform:translateZ(-26px) rotateZ(-10deg) rotate(-360deg)}
+}
+
+@keyframes introGearZoom{
+  0%{transform:perspective(900px) rotateX(14deg) rotateY(-18deg) scale(0.92); opacity:0}
+  14%{opacity:1}
+  62%{transform:perspective(900px) rotateX(10deg) rotateY(-14deg) scale(1.02); opacity:1}
+  100%{transform:perspective(900px) rotateX(0deg) rotateY(0deg) scale(6); opacity:0}
+}
+
+@keyframes introTextFade{
+  0%{opacity:0; transform:translateY(6px)}
+  22%{opacity:1; transform:translateY(0)}
+  80%{opacity:1; transform:translateY(0)}
+  100%{opacity:0; transform:translateY(-6px)}
+}
+
+@media (prefers-reduced-motion: reduce){
+  .preloader.is-playing .intro-gear-wrap{animation:none}
+  .preloader.is-playing .intro-gear-front{animation:none}
+  .preloader.is-playing .intro-gear-back{animation:none}
+  .preloader.is-playing .preloader-text{animation:none}
+}

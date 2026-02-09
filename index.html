@@ -1,0 +1,1355 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vince Yancy Cadutdut | Web Developer & IT Support Specialist</title>
+  <meta name="description" content="Portfolio of Vince Yancy Cadutdut — Web Developer & IT Support Specialist in Aurora, Zamboanga Del Sur, Philippines. Full‑stack web apps, AI automation, and reliable IT support." />
+  <meta name="keywords" content="Vince Yancy Cadutdut, web developer, IT support, AI automation, Philippines, JavaScript, responsive web design" />
+  <meta name="author" content="Vince Yancy Cadutdut" />
+
+  <meta property="og:title" content="Vince Yancy Cadutdut | Web Developer & IT Support Specialist" />
+  <meta property="og:description" content="Full‑stack web applications, AI automation, and dependable IT support." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="theme-color" content="#0b1220" />
+  <meta name="color-scheme" content="dark light" />
+
+  <script>
+    (() => {
+      try {
+        const key = 'vince_theme';
+        const saved = localStorage.getItem(key);
+        const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+        const theme = saved === 'light' || saved === 'dark' ? saved : (prefersLight ? 'light' : 'dark');
+        if (theme === 'light') document.documentElement.setAttribute('data-theme', 'light');
+      } catch (_) {
+      }
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/loader.css" />
+  <link rel="stylesheet" href="assets/css/modal.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="intro-gear-wrap" aria-hidden="true">
+        <svg class="intro-gear intro-gear-back" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33h.01A1.65 1.65 0 0 0 9 3.09V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51h.01a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.01A1.65 1.65 0 0 0 20.91 11H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <svg class="intro-gear intro-gear-front" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="gearStroke" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="var(--brand2)" />
+              <stop offset="1" stop-color="var(--brand)" />
+            </linearGradient>
+          </defs>
+          <path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z" stroke="url(#gearStroke)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33h.01A1.65 1.65 0 0 0 9 3.09V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51h.01a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.01A1.65 1.65 0 0 0 20.91 11H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1Z" stroke="url(#gearStroke)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <p class="preloader-text">Loading portfolio…</p>
+    </div>
+  </div> -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span class="brand-text">Vince</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-menu" id="navMenu">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#experience">Experience</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#services">Services</a>
+          <!-- <a class="nav-link" href="#blog">Blog</a> -->
+          <a class="nav-link" href="#testimonials">References</a>
+          <a class="nav-link" href="#contact">Contact</a>
+          <button class="btn btn-ghost theme-toggle" type="button" id="themeToggle" aria-label="Toggle dark and light mode" aria-pressed="false">
+            <span class="btn-icon" aria-hidden="true" id="themeIcon"></span>
+            Theme
+          </button>
+          <a class="btn btn-primary nav-cta" href="#contact">Hire Me</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="Hero">
+      <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="container hero-grid">
+        <div class="hero-copy" data-aos="fade-up" data-aos-duration="650">
+          <div class="hero-status">
+            <span class="hero-status-dot" aria-hidden="true"></span>
+            Available for hire
+          </div>
+          <h1 class="hero-title">I build <span class="grad-text">web apps</span> &amp; <span class="grad-text">automation</span> that actually work.</h1>
+          <p class="hero-subtitle">
+            Developer + IT specialist who ships dashboards, workflow tools, and automation scripts — then stays around to keep everything running smoothly.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="#contact">
+              <span class="btn-icon" aria-hidden="true" data-lucide="send"></span>
+              Let's Work Together
+            </a>
+            <a class="btn btn-ghost btn-lg" href="#projects">View Projects</a>
+            <button class="btn btn-ghost btn-lg" type="button" id="resumeBtn">
+              <span class="btn-icon" aria-hidden="true" data-lucide="download"></span>
+              Resume
+            </button>
+          </div>
+
+          <div class="hero-proof" data-aos="fade-up" data-aos-delay="120" data-aos-duration="650">
+            <div class="hero-proof-item">
+              <p class="hero-proof-value">2+</p>
+              <p class="hero-proof-label">Years building web + IT systems</p>
+            </div>
+            <div class="hero-proof-divider" aria-hidden="true"></div>
+            <div class="hero-proof-item">
+              <p class="hero-proof-value">3</p>
+              <p class="hero-proof-label">Tracks: Web, Automation, IT Support</p>
+            </div>
+            <div class="hero-proof-divider" aria-hidden="true"></div>
+            <div class="hero-proof-item">
+              <p class="hero-proof-value">B.S.</p>
+              <p class="hero-proof-label">Computer Engineering</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card" data-aos="fade-left" data-aos-duration="750">
+          <div class="profile">
+            <img class="profile-img" src="assets/img/profile.jpg" alt="Vince Yancy Cadutdut" width="520" height="520" loading="eager" />
+            <div class="profile-badge" aria-label="Location">
+              <span class="pill-icon" aria-hidden="true" data-lucide="map-pin"></span>
+              Aurora, Zamboanga Del Sur
+            </div>
+          </div>
+
+          <div class="hero-services">
+            <div class="hero-service-chip">
+              <span aria-hidden="true" data-lucide="code-2"></span>
+              Web Development
+            </div>
+            <div class="hero-service-chip">
+              <span aria-hidden="true" data-lucide="bot"></span>
+              AI Automation
+            </div>
+            <div class="hero-service-chip">
+              <span aria-hidden="true" data-lucide="wrench"></span>
+              IT Support
+            </div>
+            <div class="hero-service-chip">
+              <span aria-hidden="true" data-lucide="layout-dashboard"></span>
+              Dashboards
+            </div>
+          </div>
+
+          <div class="hero-contact-row">
+            <a class="hero-contact-link" href="mailto:vinceyancy.cadutdut@gmail.com">
+              <span aria-hidden="true" data-lucide="mail"></span>
+              vinceyancy.cadutdut@gmail.com
+            </a>
+            <a class="hero-contact-link" href="tel:+639760487232">
+              <span aria-hidden="true" data-lucide="phone"></span>
+              +63 976 048 7232
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
+
+    <section class="section" id="about" aria-label="About">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up" data-aos-duration="650">
+          <p class="section-kicker">About</p>
+          <h2 class="section-title">The developer who builds your systems <em>&</em> keeps them running.</h2>
+        </div>
+
+        <div class="about-showcase" data-aos="fade-up" data-aos-delay="80" data-aos-duration="700">
+          <div class="about-showcase-image">
+            <img src="assets/img/about_me.jpg" alt="Vince Yancy Cadutdut" width="520" height="520" loading="lazy" />
+            <div class="about-badge">
+              <span class="about-badge-icon" aria-hidden="true" data-lucide="briefcase"></span>
+              Open to work
+            </div>
+          </div>
+
+          <div class="about-showcase-body">
+            <p class="about-lead">
+              I'm <strong>Vince Yancy Cadutdut</strong> — a hands-on web developer with real IT support experience. I don't just write code; I solve the problems behind it.
+            </p>
+            <p class="about-body-text">
+              From building dashboards and workflow tools to troubleshooting networks, printers, and devices — I deliver practical solutions that teams actually use. My work is built for reliability, speed, and clarity.
+            </p>
+
+            <div class="about-stats-row">
+              <div class="about-stat">
+                <p class="about-stat-value">2+</p>
+                <p class="about-stat-label">Years in Web + IT</p>
+              </div>
+              <div class="about-stat">
+                <p class="about-stat-value">5+</p>
+                <p class="about-stat-label">Years teaching clients</p>
+              </div>
+              <div class="about-stat">
+                <p class="about-stat-value">B.S.</p>
+                <p class="about-stat-label">Computer Engineering</p>
+              </div>
+            </div>
+
+            <div class="about-tags" aria-label="Specializations">
+              <span class="tag tag-glow">Workflow Apps</span>
+              <span class="tag tag-glow">Automation</span>
+              <span class="tag tag-glow">AI Assistants</span>
+              <span class="tag tag-glow">IT Support</span>
+              <span class="tag tag-glow">Troubleshooting</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-grid" data-aos="fade-up" data-aos-delay="160" data-aos-duration="650">
+          <div class="about-card about-card-accent">
+            <div class="about-card-icon" aria-hidden="true">
+              <span data-lucide="rocket"></span>
+            </div>
+            <h3 class="card-title">Production-ready builds</h3>
+            <p class="muted">Responsive UIs, dashboards, and workflow tools — built around your process, fast on every device.</p>
+          </div>
+          <div class="about-card about-card-accent">
+            <div class="about-card-icon" aria-hidden="true">
+              <span data-lucide="bot"></span>
+            </div>
+            <h3 class="card-title">AI-powered automation</h3>
+            <p class="muted">Scripts and AI-assisted flows that cut repetitive tasks like data entry, reports, and follow-ups.</p>
+          </div>
+          <div class="about-card about-card-accent">
+            <div class="about-card-icon" aria-hidden="true">
+              <span data-lucide="wrench"></span>
+            </div>
+            <h3 class="card-title">Reliable IT support</h3>
+            <p class="muted">Fewer disruptions, faster fixes — networks, devices, and systems that stay stable.</p>
+          </div>
+          <div class="about-card about-card-accent">
+            <div class="about-card-icon" aria-hidden="true">
+              <span data-lucide="message-square"></span>
+            </div>
+            <h3 class="card-title">Clear communication</h3>
+            <p class="muted">Technical work translated into simple, actionable updates your team can act on immediately.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="cta-strip" aria-label="Call to action">
+      <div class="container cta-inner" data-aos="fade-up" data-aos-duration="650">
+        <div>
+          <p class="cta-kicker">Next step</p>
+          <h2 class="cta-title">Ready to automate your business and ship faster?</h2>
+          <p class="cta-subtitle">Let’s streamline workflows, build reliable systems, and turn ideas into tools your team actually uses.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="#contact">Get In Touch</a>
+          <a class="btn btn-ghost" href="#projects">View Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="blog" aria-label="Blog">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up" data-aos-duration="650">
+          <p class="section-kicker">Blog</p>
+          <h2 class="section-title">Notes on web development, automation, and troubleshooting.</h2>
+          <p class="section-subtitle">A space for technical write-ups and practical lessons. (Placeholder posts for now.)</p>
+          <div class="section-actions">
+            <a class="btn btn-primary" href="#contact">Get In Touch</a>
+            <a class="btn btn-ghost" href="#services">Ready to Automate Your Business?</a>
+          </div>
+        </div>
+
+        <div class="blog-grid">
+          <article class="post" data-aos="fade-up" data-aos-delay="50" data-aos-duration="650">
+            <div class="post-meta">
+              <span class="chip">Automation</span>
+              <span class="muted">Coming soon</span>
+            </div>
+            <h3 class="post-title">How AI agents can remove repetitive work from daily operations</h3>
+            <p class="post-desc">A practical breakdown of identifying automation opportunities and implementing them safely.</p>
+            <a class="btn btn-sm btn-ghost" href="#contact">Request the article</a>
+          </article>
+
+          <article class="post" data-aos="fade-up" data-aos-delay="100" data-aos-duration="650">
+            <div class="post-meta">
+              <span class="chip">Web</span>
+              <span class="muted">Coming soon</span>
+            </div>
+            <h3 class="post-title">Building responsive UIs that stay maintainable</h3>
+            <p class="post-desc">Patterns, naming, and layout strategies that keep frontend work clean as projects grow.</p>
+            <a class="btn btn-sm btn-ghost" href="#contact">Request the article</a>
+          </article>
+
+          <article class="post" data-aos="fade-up" data-aos-delay="150" data-aos-duration="650">
+            <div class="post-meta">
+              <span class="chip">IT Support</span>
+              <span class="muted">Coming soon</span>
+            </div>
+            <h3 class="post-title">Troubleshooting networks and printers without losing time</h3>
+            <p class="post-desc">A simple diagnostic flow that reduces downtime and makes support more predictable.</p>
+            <a class="btn btn-sm btn-ghost" href="#contact">Request the article</a>
+          </article>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="section" id="skills" aria-label="Skills">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up" data-aos-duration="650">
+          <p class="section-kicker">Skills</p>
+          <h2 class="section-title">Technical skills that ship results.</h2>
+          <p class="section-subtitle">A balanced toolkit across web development, automation, and hands-on IT support.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="50" data-aos-duration="650">
+            <div class="skill-head">
+              <h3 class="card-title">Web Development</h3>
+              <span class="pill">Client‑ready UI</span>
+            </div>
+
+            <div class="skill" data-skill>
+              <div class="skill-top"><span>HTML</span><span class="muted">90%</span></div>
+              <div class="bar"><span style="--w:90%"></span></div>
+            </div>
+            <div class="skill" data-skill>
+              <div class="skill-top"><span>CSS</span><span class="muted">85%</span></div>
+              <div class="bar"><span style="--w:85%"></span></div>
+            </div>
+            <div class="skill" data-skill>
+              <div class="skill-top"><span>JavaScript</span><span class="muted">80%</span></div>
+              <div class="bar"><span style="--w:80%"></span></div>
+            </div>
+            <div class="skill" data-skill>
+              <div class="skill-top"><span>Responsive Web Design</span><span class="muted">90%</span></div>
+              <div class="bar"><span style="--w:90%"></span></div>
+            </div>
+            <div class="skill" data-skill>
+              <div class="skill-top"><span>Cross‑browser Compatibility</span><span class="muted">80%</span></div>
+              <div class="bar"><span style="--w:80%"></span></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="650">
+            <div class="skill-head">
+              <h3 class="card-title">AI & Automation</h3>
+              <span class="pill">Workflow impact</span>
+            </div>
+
+            <div class="skill" data-skill>
+              <div class="skill-top"><span>AI Agents & Automation Tools</span><span class="muted">75%</span></div>
+              <div class="bar"><span style="--w:75%"></span></div>
+            </div>
+            <div class="skill" data-skill>
+              <div class="skill-top"><span>Task Automation & Integrations</span><span class="muted">75%</span></div>
+              <div class="bar"><span style="--w:75%"></span></div>
+            </div>
+            <div class="skill" data-skill>
+              <div class="skill-top"><span>Problem Solving</span><span class="muted">90%</span></div>
+              <div class="bar"><span style="--w:90%"></span></div>
+            </div>
+            <div class="skill" data-skill>
+              <div class="skill-top"><span>Team Collaboration</span><span class="muted">85%</span></div>
+              <div class="bar"><span style="--w:85%"></span></div>
+            </div>
+            <div class="skill" data-skill>
+              <div class="skill-top"><span>Time Management</span><span class="muted">85%</span></div>
+              <div class="bar"><span style="--w:85%"></span></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="150" data-aos-duration="650">
+            <div class="skill-head">
+              <h3 class="card-title">IT Support</h3>
+              <span class="pill">Operational reliability</span>
+            </div>
+
+            <div class="skill" data-skill>
+              <div class="skill-top"><span>Hardware Troubleshooting</span><span class="muted">90%</span></div>
+              <div class="bar"><span style="--w:90%"></span></div>
+            </div>
+            <div class="skill" data-skill>
+              <div class="skill-top"><span>Printer Configuration & Repair</span><span class="muted">85%</span></div>
+              <div class="bar"><span style="--w:85%"></span></div>
+            </div>
+            <div class="skill" data-skill>
+              <div class="skill-top"><span>Network Diagnostics</span><span class="muted">80%</span></div>
+              <div class="bar"><span style="--w:80%"></span></div>
+            </div>
+            <div class="skill" data-skill>
+              <div class="skill-top"><span>System Maintenance</span><span class="muted">85%</span></div>
+              <div class="bar"><span style="--w:85%"></span></div>
+            </div>
+            <div class="skill" data-skill>
+              <div class="skill-top"><span>Communication</span><span class="muted">90%</span></div>
+              <div class="bar"><span style="--w:90%"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="quiz" data-aos="fade-up" data-aos-delay="100" data-aos-duration="650" aria-label="Quick assessment">
+          <h3 class="card-title">Quick Need Assessment</h3>
+          <p class="muted">Answer 3 questions and I’ll suggest the best way I can help—then you can send it straight to my inbox.</p>
+
+          <form class="quiz-form" id="skillQuiz" novalidate>
+            <fieldset class="quiz-q">
+              <legend>Your primary goal</legend>
+              <div class="quiz-options">
+                <label class="quiz-option"><input type="radio" name="goal" value="web" required />Build or improve a web application</label>
+                <label class="quiz-option"><input type="radio" name="goal" value="automation" required />Automate repetitive tasks with AI</label>
+                <label class="quiz-option"><input type="radio" name="goal" value="support" required />Fix systems, network, or IT workflow issues</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="quiz-q">
+              <legend>Timeline</legend>
+              <div class="quiz-options">
+                <label class="quiz-option"><input type="radio" name="timeline" value="urgent" required />Urgent (ASAP)</label>
+                <label class="quiz-option"><input type="radio" name="timeline" value="soon" required />Soon (1–4 weeks)</label>
+                <label class="quiz-option"><input type="radio" name="timeline" value="flexible" required />Flexible / planning stage</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="quiz-q">
+              <legend>Preferred collaboration</legend>
+              <div class="quiz-options">
+                <label class="quiz-option"><input type="radio" name="mode" value="solo" required />I need someone to handle it end-to-end</label>
+                <label class="quiz-option"><input type="radio" name="mode" value="team" required />I’m working with a team and need support</label>
+                <label class="quiz-option"><input type="radio" name="mode" value="consult" required />I want advice + a plan first</label>
+              </div>
+            </fieldset>
+
+            <div class="quiz-actions">
+              <button class="btn btn-primary" type="submit">See Recommendation</button>
+              <a class="btn btn-ghost" id="quizEmailLink" href="#" aria-label="Email this assessment" hidden>Send to Vince</a>
+              <p class="muted tiny" id="quizResult" aria-live="polite"></p>
+            </div>
+          </form>
+        </div> -->
+      </div>
+    </section>
+
+    <section class="section" id="experience" aria-label="Experience">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up" data-aos-duration="650">
+          <p class="section-kicker">Experience</p>
+          <h2 class="section-title">Professional Journey</h2>
+          <p class="section-subtitle">Scroll to unlock milestones. Hover for quick summaries. Click to expand details.</p>
+        </div>
+
+        <div class="roadmap" id="careerRoadmap" data-roadmap data-view="detailed" data-aos="fade-up" data-aos-delay="100" data-aos-duration="650">
+          <div class="roadmap-controls" aria-label="Timeline filters">
+            <div class="roadmap-control" role="group" aria-label="Filter by skill category">
+              <button class="chip is-active" type="button" data-roadmap-filter-skill="all">All</button>
+              <button class="chip" type="button" data-roadmap-filter-skill="development">Development</button>
+              <button class="chip" type="button" data-roadmap-filter-skill="support">IT Support</button>
+              <button class="chip" type="button" data-roadmap-filter-skill="communication">Communication</button>
+            </div>
+            <div class="roadmap-control" role="group" aria-label="Filter by achievement type">
+              <button class="chip is-active" type="button" data-roadmap-filter-type="all">All</button>
+              <button class="chip" type="button" data-roadmap-filter-type="professional">Professional</button>
+              <button class="chip" type="button" data-roadmap-filter-type="education">Education</button>
+              <button class="chip" type="button" data-roadmap-filter-type="future">Future</button>
+            </div>
+            <div class="roadmap-control" role="group" aria-label="Timeline view">
+              <button class="chip is-active" type="button" data-roadmap-view="detailed">Detailed</button>
+              <button class="chip" type="button" data-roadmap-view="simplified">Simplified</button>
+            </div>
+          </div>
+
+          <div class="roadmap-progress" aria-label="Overall career progress">
+            <div class="roadmap-progress-top">
+              <span class="muted">Career progress</span>
+              <span class="roadmap-progress-value" data-roadmap-progress-text>0%</span>
+            </div>
+            <p class="roadmap-next muted" data-roadmap-next aria-live="polite"></p>
+            <div class="roadmap-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+              <span class="roadmap-progress-fill" data-roadmap-progress-fill></span>
+            </div>
+          </div>
+
+          <div class="roadmap-nav" aria-label="Timeline navigation">
+            <button class="roadmap-nav-btn is-active" type="button" data-roadmap-jump="#ms-past">
+              <span class="roadmap-nav-dot" aria-hidden="true"></span>
+              2016
+            </button>
+            <button class="roadmap-nav-btn" type="button" data-roadmap-jump="#ms-transition">
+              <span class="roadmap-nav-dot" aria-hidden="true"></span>
+              2019–2024
+            </button>
+            <button class="roadmap-nav-btn" type="button" data-roadmap-jump="#ms-present">
+              <span class="roadmap-nav-dot" aria-hidden="true"></span>
+              2024–2026
+            </button>
+            <button class="roadmap-nav-btn" type="button" data-roadmap-jump="#ms-future">
+              <span class="roadmap-nav-dot" aria-hidden="true"></span>
+              2026+
+            </button>
+          </div>
+
+          <div class="roadmap-track" data-roadmap-track>
+            <div class="roadmap-line" aria-hidden="true">
+              <span class="roadmap-line-base"></span>
+              <span class="roadmap-line-fill" data-roadmap-line></span>
+            </div>
+
+            <div class="milestone is-left" id="ms-past" data-milestone data-skills="development" data-type="professional" data-era="past">
+              <button class="milestone-trigger" type="button" data-accordion data-milestone-trigger aria-expanded="false">
+                <span class="milestone-dot" aria-hidden="true"></span>
+                <div class="milestone-card">
+                  <div class="milestone-head">
+                    <div>
+                      <p class="milestone-range">2016</p>
+                      <h3 class="milestone-role">Test Engineering Intern</h3>
+                      <p class="milestone-org">Analog Devices Inc., Philippines</p>
+                    </div>
+                    <div class="milestone-meta">
+                      <span class="badge" data-badge><span class="badge-icon" aria-hidden="true" data-lucide="check"></span> Foundation</span>
+                      <span class="chip">Internship</span>
+                    </div>
+                  </div>
+
+                  <p class="milestone-quote muted">Built technical foundations through troubleshooting and process thinking.</p>
+                  <div class="milestone-tooltip" role="tooltip">Early exposure to debugging, databases, and engineering workflows.</div>
+                </div>
+              </button>
+
+              <div class="milestone-panel" data-accordion-panel>
+                <div class="milestone-grid">
+                  <ul class="bullet-list">
+                    <li>Assisted in database management and creation for test engineering processes.</li>
+                    <li>Performed test troubleshooting using Python programming.</li>
+                    <li>Learned structured debugging and documentation practices.</li>
+                  </ul>
+
+                  <div class="milestone-side">
+                    <div class="milestone-metrics" aria-label="Impact metrics">
+                      <div class="metric">
+                        <p class="metric-value"><span data-countup data-target="1">0</span></p>
+                        <p class="metric-label">Year experience</p>
+                      </div>
+                      <div class="metric">
+                        <p class="metric-value"><span data-countup data-target="1">0</span></p>
+                        <p class="metric-label">Language: Python</p>
+                      </div>
+                      <div class="metric">
+                        <p class="metric-value"><span data-countup data-target="2">0</span>+</p>
+                        <p class="metric-label">Core skills</p>
+                      </div>
+                    </div>
+
+                    <div class="tech-stack" aria-label="Technologies used">
+                      <span class="tech" data-tech><span class="tech-icon" aria-hidden="true" data-lucide="terminal"></span> Python</span>
+                      <span class="tech" data-tech><span class="tech-icon" aria-hidden="true" data-lucide="database"></span> Databases</span>
+                      <span class="tech" data-tech><span class="tech-icon" aria-hidden="true" data-lucide="bug"></span> Debugging</span>
+                    </div>
+
+                    <div class="milestone-skills" aria-label="Skill progression">
+                      <div class="m-skill" data-skill-bar data-level="72">
+                        <div class="m-skill-top"><span>Problem Solving</span><span class="muted">72%</span></div>
+                        <div class="m-bar"><span></span></div>
+                      </div>
+                      <div class="m-skill" data-skill-bar data-level="70">
+                        <div class="m-skill-top"><span>Debugging</span><span class="muted">70%</span></div>
+                        <div class="m-bar"><span></span></div>
+                      </div>
+                    </div>
+
+                    <div class="milestone-media">
+                      <img src="assets/img/project-placeholder.svg" alt="Engineering snapshot placeholder" width="960" height="540" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="roadmap-bridge muted" aria-hidden="true">Foundation first: debugging, data, and discipline.</div>
+
+            <div class="milestone is-right" id="ms-transition" data-milestone data-skills="communication" data-type="education" data-era="transition">
+              <button class="milestone-trigger" type="button" data-accordion data-milestone-trigger aria-expanded="false">
+                <span class="milestone-dot" aria-hidden="true"></span>
+                <div class="milestone-card">
+                  <div class="milestone-head">
+                    <div>
+                      <p class="milestone-range">2019–2024</p>
+                      <h3 class="milestone-role">Online ESL Teacher</h3>
+                      <p class="milestone-org">STalk, Private Tutor, iTG</p>
+                    </div>
+                    <div class="milestone-meta">
+                      <span class="badge" data-badge><span class="badge-icon" aria-hidden="true" data-lucide="check"></span> Growth</span>
+                      <span class="chip">Remote</span>
+                    </div>
+                  </div>
+
+                  <p class="milestone-quote muted">Clear communication turns complex problems into simple next steps.</p>
+                  <div class="milestone-tooltip" role="tooltip">Built strong client-facing communication and adaptability across platforms.</div>
+                </div>
+              </button>
+
+              <div class="milestone-panel" data-accordion-panel>
+                <div class="milestone-grid">
+                  <ul class="bullet-list">
+                    <li>Strengthened communication and presentation skills through online teaching.</li>
+                    <li>Developed adaptability using various digital platforms and tools.</li>
+                    <li>Improved lesson planning and feedback systems for consistent progress.</li>
+                  </ul>
+
+                  <div class="milestone-side">
+                    <div class="milestone-metrics" aria-label="Impact metrics">
+                      <div class="metric">
+                        <p class="metric-value"><span data-countup data-target="5">0</span>+</p>
+                        <p class="metric-label">Years teaching</p>
+                      </div>
+                      <div class="metric">
+                        <p class="metric-value"><span data-countup data-target="2">0</span>+</p>
+                        <p class="metric-label">Learning systems</p>
+                      </div>
+                      <div class="metric">
+                        <p class="metric-value"><span data-countup data-target="1">0</span></p>
+                        <p class="metric-label">Skill: Communication</p>
+                      </div>
+                    </div>
+
+                    <div class="tech-stack" aria-label="Technologies used">
+                      <span class="tech" data-tech><span class="tech-icon" aria-hidden="true" data-lucide="video"></span> Video Platforms</span>
+                      <span class="tech" data-tech><span class="tech-icon" aria-hidden="true" data-lucide="message-circle"></span> Coaching</span>
+                      <span class="tech" data-tech><span class="tech-icon" aria-hidden="true" data-lucide="users"></span> Collaboration</span>
+                    </div>
+
+                    <div class="milestone-skills" aria-label="Skill progression">
+                      <div class="m-skill" data-skill-bar data-level="90">
+                        <div class="m-skill-top"><span>Communication</span><span class="muted">90%</span></div>
+                        <div class="m-bar"><span></span></div>
+                      </div>
+                      <div class="m-skill" data-skill-bar data-level="82">
+                        <div class="m-skill-top"><span>Adaptability</span><span class="muted">82%</span></div>
+                        <div class="m-bar"><span></span></div>
+                      </div>
+                    </div>
+
+                    <div class="milestone-media">
+                      <img src="assets/img/project-placeholder.svg" alt="Teaching snapshot placeholder" width="960" height="540" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="roadmap-bridge muted" aria-hidden="true">Every experience taught me something valuable that I bring to every project.</div>
+
+            <div class="milestone is-left" id="ms-present" data-milestone data-skills="development support" data-type="professional" data-era="present">
+              <button class="milestone-trigger" type="button" data-accordion data-milestone-trigger aria-expanded="false">
+                <span class="milestone-dot" aria-hidden="true"></span>
+                <div class="milestone-card">
+                  <div class="milestone-head">
+                    <div>
+                      <p class="milestone-range">2024–2026</p>
+                      <h3 class="milestone-role">Web Developer & IT Support</h3>
+                      <p class="milestone-org">Citistar Trade Development Corporation</p>
+                    </div>
+                    <div class="milestone-meta">
+                      <span class="badge" data-badge><span class="badge-icon" aria-hidden="true" data-lucide="check"></span> Current</span>
+                      <span class="chip">Full‑time</span>
+                    </div>
+                  </div>
+
+                  <p class="milestone-quote muted">Now leveraging AI and automation to solve real business challenges.</p>
+                  <div class="milestone-tooltip" role="tooltip">Web apps + AI automation + hands-on IT support for real operations.</div>
+                </div>
+              </button>
+
+              <div class="milestone-panel" data-accordion-panel>
+                <div class="milestone-grid">
+                  <ul class="bullet-list">
+                    <li>Developed and maintained web-based applications supporting business operations.</li>
+                    <li>Leveraged AI agents and automation tools to build intelligent systems.</li>
+                    <li>Integrated AI-powered solutions to automate tasks and improve workflows.</li>
+                    <li>Provided comprehensive IT support: systems troubleshooting, printers, and network connectivity.</li>
+                    <li>Collaborated with team members to enhance features and improve usability.</li>
+                  </ul>
+
+                  <div class="milestone-side">
+                    <div class="milestone-metrics" aria-label="Impact metrics">
+                      <div class="metric">
+                        <p class="metric-value"><span data-countup data-target="24">0</span>+</p>
+                        <p class="metric-label">Months delivering</p>
+                      </div>
+                      <div class="metric">
+                        <p class="metric-value"><span data-countup data-target="3">0</span></p>
+                        <p class="metric-label">Tracks: Web, AI, IT</p>
+                      </div>
+                      <div class="metric">
+                        <p class="metric-value"><span data-countup data-target="10">0</span>+</p>
+                        <p class="metric-label">Workflow improvements</p>
+                      </div>
+                    </div>
+
+                    <div class="tech-stack" aria-label="Technologies used">
+                      <span class="tech" data-tech><span class="tech-icon" aria-hidden="true" data-lucide="code"></span> JavaScript</span>
+                      <span class="tech" data-tech><span class="tech-icon" aria-hidden="true" data-lucide="settings"></span> Automation</span>
+                      <span class="tech" data-tech><span class="tech-icon" aria-hidden="true" data-lucide="bot"></span> AI Agents</span>
+                      <span class="tech" data-tech><span class="tech-icon" aria-hidden="true" data-lucide="server"></span> Systems</span>
+                      <span class="tech" data-tech><span class="tech-icon" aria-hidden="true" data-lucide="wifi"></span> Network</span>
+                    </div>
+
+                    <div class="milestone-skills" aria-label="Skill progression">
+                      <div class="m-skill" data-skill-bar data-level="92">
+                        <div class="m-skill-top"><span>Development</span><span class="muted">92%</span></div>
+                        <div class="m-bar"><span></span></div>
+                      </div>
+                      <div class="m-skill" data-skill-bar data-level="88">
+                        <div class="m-skill-top"><span>Automation</span><span class="muted">88%</span></div>
+                        <div class="m-bar"><span></span></div>
+                      </div>
+                      <div class="m-skill" data-skill-bar data-level="85">
+                        <div class="m-skill-top"><span>IT Support</span><span class="muted">85%</span></div>
+                        <div class="m-bar"><span></span></div>
+                      </div>
+                    </div>
+
+                    <div class="milestone-media">
+                      <img src="assets/img/project-placeholder.svg" alt="Project snapshot placeholder" width="960" height="540" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="roadmap-bridge muted" aria-hidden="true">Next milestone: ambition, vision, and bigger outcomes.</div>
+
+            <div class="milestone is-right is-future" id="ms-future" data-milestone data-skills="development" data-type="future" data-era="future">
+              <button class="milestone-trigger" type="button" data-accordion data-milestone-trigger aria-expanded="false">
+                <span class="milestone-dot" aria-hidden="true"></span>
+                <div class="milestone-card">
+                  <div class="milestone-head">
+                    <div>
+                      <p class="milestone-range">2026+</p>
+                      <h3 class="milestone-role">Future Vision</h3>
+                      <p class="milestone-org">Building the future, one intelligent solution at a time.</p>
+                    </div>
+                    <div class="milestone-meta">
+                      <span class="badge" data-badge><span class="badge-icon" aria-hidden="true" data-lucide="sparkles"></span> Next</span>
+                      <span class="chip">Roadmap</span>
+                    </div>
+                  </div>
+
+                  <p class="milestone-quote muted">Next milestone: deeper AI integration, stronger systems, and bigger impact.</p>
+                  <div class="milestone-tooltip" role="tooltip">Ambitious goals: smarter automation, better UX, and measurable business outcomes.</div>
+                </div>
+              </button>
+
+              <div class="milestone-panel" data-accordion-panel>
+                <div class="milestone-grid">
+                  <ul class="bullet-list">
+                    <li>Ship client-ready AI-powered tools that save time and reduce operational risk.</li>
+                    <li>Build robust dashboards and internal systems with clean UX and reliable data flows.</li>
+                    <li>Keep improving performance, accessibility, and security across every build.</li>
+                  </ul>
+
+                  <div class="milestone-side">
+                    <div class="milestone-metrics" aria-label="Impact metrics">
+                      <div class="metric">
+                        <p class="metric-value"><span data-countup data-target="3">0</span></p>
+                        <p class="metric-label">Goals in focus</p>
+                      </div>
+                      <div class="metric">
+                        <p class="metric-value"><span data-countup data-target="1">0</span></p>
+                        <p class="metric-label">Next step: Your project</p>
+                      </div>
+                      <div class="metric">
+                        <p class="metric-value"><span data-countup data-target="100">0</span>%</p>
+                        <p class="metric-label">Commitment</p>
+                      </div>
+                    </div>
+
+                    <div class="tech-stack" aria-label="Technologies to explore">
+                      <span class="tech" data-tech><span class="tech-icon" aria-hidden="true" data-lucide="brain"></span> AI</span>
+                      <span class="tech" data-tech><span class="tech-icon" aria-hidden="true" data-lucide="rocket"></span> Product</span>
+                      <span class="tech" data-tech><span class="tech-icon" aria-hidden="true" data-lucide="shield"></span> Security</span>
+                    </div>
+
+                    <div class="milestone-skills" aria-label="Skill progression">
+                      <div class="m-skill" data-skill-bar data-level="95">
+                        <div class="m-skill-top"><span>Innovation</span><span class="muted">95%</span></div>
+                        <div class="m-bar"><span></span></div>
+                      </div>
+                      <div class="m-skill" data-skill-bar data-level="90">
+                        <div class="m-skill-top"><span>Impact</span><span class="muted">90%</span></div>
+                        <div class="m-bar"><span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="roadmap-cta" aria-label="Experience call to action">
+            <div>
+              <h3 class="card-title">Want to see what we can build together?</h3>
+              <p class="muted">Tell me what you’re trying to achieve, and I’ll suggest the cleanest path from idea to launch.</p>
+            </div>
+            <div class="roadmap-cta-actions">
+              <a class="btn btn-primary" href="#contact">Let&apos;s discuss your project</a>
+              <button class="btn btn-ghost" type="button" id="resumeBtn2">Download Full Resume</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-label="Projects">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up" data-aos-duration="650">
+          <p class="section-kicker">Projects</p>
+          <h2 class="section-title">Real systems I've built <em>&</em> shipped.</h2>
+          <p class="section-subtitle">From IoT hardware to blockchain automation — each project solved a real problem for real users.</p>
+          <div class="section-actions">
+            <a class="btn btn-primary" href="#contact">Get In Touch</a>
+            <a class="btn btn-ghost" href="#services">See Services</a>
+          </div>
+        </div>
+
+        <div class="bento-grid" data-aos="fade-up" data-aos-delay="80" data-aos-duration="700">
+
+          <article class="bento-card bento-hero">
+            <img class="bento-bg" src="assets/img/Piso_printer/UI/admin_dashboard_1.png" alt="Piso Printer admin dashboard" loading="lazy" />
+            <div class="bento-overlay">
+              <span class="bento-badge">IoT + Web</span>
+              <div class="bento-content">
+                <span class="bento-number" aria-hidden="true">01</span>
+                <h3 class="bento-title">Piso Printer System</h3>
+                <p class="bento-desc">Pay-per-print kiosk with web control panel, job management, pricing, transaction logs, and hardware controller logic.</p>
+                <div class="bento-tags">
+                  <span class="tag tag-glow">PHP</span>
+                  <span class="tag tag-glow">JavaScript</span>
+                  <span class="tag tag-glow">MySQL</span>
+                  <span class="tag tag-glow">IoT</span>
+                  <span class="tag tag-glow">Arduino</span>
+                </div>
+                <div class="bento-actions">
+                  <a class="btn btn-sm btn-primary" href="https://github.com/vinzie12/pisoprinter" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                  <span class="bento-img-count" aria-label="Screenshot gallery">
+                    <span aria-hidden="true" data-lucide="images"></span>
+                    6 screenshots
+                  </span>
+                </div>
+              </div>
+              <div class="bento-gallery">
+                <button class="bento-thumb is-active" type="button" aria-label="Admin dashboard">
+                  <img src="assets/img/Piso_printer/UI/admin_dashboard_1.png" alt="" loading="lazy" />
+                </button>
+                <button class="bento-thumb" type="button" aria-label="Dashboard logs">
+                  <img src="assets/img/Piso_printer/UI/admin_dashboard_logs.png" alt="" loading="lazy" />
+                </button>
+                <button class="bento-thumb" type="button" aria-label="Insert coin screen">
+                  <img src="assets/img/Piso_printer/UI/login_insert_coin.jpg" alt="" loading="lazy" />
+                </button>
+                <button class="bento-thumb" type="button" aria-label="Print queue">
+                  <img src="assets/img/Piso_printer/UI/login_queueing_1.png" alt="" loading="lazy" />
+                </button>
+                <button class="bento-thumb" type="button" aria-label="Hardware build">
+                  <img src="assets/img/Piso_printer/Hardware/hardware_1.jpg" alt="" loading="lazy" />
+                </button>
+                <button class="bento-thumb" type="button" aria-label="Hardware internals">
+                  <img src="assets/img/Piso_printer/Hardware/hardware_3.jpg" alt="" loading="lazy" />
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="bento-card bento-tall">
+            <div class="bento-code-bg" aria-hidden="true">
+              <div class="code-preview">
+                <p class="code-line"><span class="code-kw">const</span> delegations</p>
+                <p class="code-line">&nbsp;&nbsp;= <span class="code-fn">getDelegations</span>();</p>
+                <p class="code-line">&nbsp;</p>
+                <p class="code-line"><span class="code-kw">const</span> matured =</p>
+                <p class="code-line">&nbsp;&nbsp;delegations.<span class="code-fn">filter</span>(</p>
+                <p class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;d =&gt; <span class="code-fn">daysSince</span>(d.date)</p>
+                <p class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;= <span class="code-num">7</span></p>
+                <p class="code-line">&nbsp;&nbsp;);</p>
+                <p class="code-line">&nbsp;</p>
+                <p class="code-line"><span class="code-kw">const</span> rewards =</p>
+                <p class="code-line">&nbsp;&nbsp;<span class="code-fn">calcRewards</span>(matured);</p>
+                <p class="code-line">&nbsp;</p>
+                <p class="code-line"><span class="code-fn">distribute</span>(rewards);</p>
+              </div>
+            </div>
+            <div class="bento-overlay">
+              <span class="bento-badge">Blockchain</span>
+              <div class="bento-content">
+                <span class="bento-number" aria-hidden="true">02</span>
+                <h3 class="bento-title">Hive Voting & Rewards</h3>
+                <p class="bento-desc">Automated delegation tracking, curation reward calculation, and vote distribution on Hive blockchain.</p>
+                <div class="bento-tags">
+                  <span class="tag tag-glow">Node.js</span>
+                  <span class="tag tag-glow">Hive API</span>
+                  <span class="tag tag-glow">SQLite</span>
+                </div>
+                <div class="bento-actions">
+                  <a class="btn btn-sm btn-primary" href="https://github.com/vstorage1002/hive-vote" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="bento-card bento-std">
+            <img class="bento-bg" src="assets/img/POS_system/1.PNG" alt="POS System dashboard" loading="lazy" />
+            <div class="bento-overlay">
+              <span class="bento-badge">Web App</span>
+              <div class="bento-content">
+                <span class="bento-number" aria-hidden="true">03</span>
+                <h3 class="bento-title">POS System</h3>
+                <p class="bento-desc">Sales & inventory platform with AJAX-powered controls and real-time database updates.</p>
+                <div class="bento-tags">
+                  <span class="tag tag-glow">PHP</span>
+                  <span class="tag tag-glow">MySQL</span>
+                  <span class="tag tag-glow">Bootstrap</span>
+                </div>
+                <div class="bento-actions">
+                  <span class="bento-note">
+                    <i class="fas fa-lock"></i> Company project
+                  </span>
+                  <span class="bento-img-count">
+                    <span aria-hidden="true" data-lucide="images"></span>
+                    18 screenshots
+                  </span>
+                </div>
+              </div>
+              <div class="bento-gallery">
+                <button class="bento-thumb is-active" type="button" aria-label="Dashboard">
+                  <img src="assets/img/POS_system/1.PNG" alt="" loading="lazy" />
+                </button>
+                <button class="bento-thumb" type="button" aria-label="Products">
+                  <img src="assets/img/POS_system/2.PNG" alt="" loading="lazy" />
+                </button>
+                <button class="bento-thumb" type="button" aria-label="Sales">
+                  <img src="assets/img/POS_system/3.PNG" alt="" loading="lazy" />
+                </button>
+                <button class="bento-thumb" type="button" aria-label="Settings">
+                  <img src="assets/img/POS_system/4.PNG" alt="" loading="lazy" />
+                </button>
+                <button class="bento-thumb" type="button" aria-label="Inventory">
+                  <img src="assets/img/POS_system/5.PNG" alt="" loading="lazy" />
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="bento-card bento-wide">
+            <img class="bento-bg" src="assets/img/attendance/attendance_1.png" alt="Scheduling system dashboard" loading="lazy" />
+            <div class="bento-overlay">
+              <span class="bento-badge">Web App</span>
+              <div class="bento-content">
+                <span class="bento-number" aria-hidden="true">04</span>
+                <h3 class="bento-title">Scheduling Management System</h3>
+                <p class="bento-desc">Internal platform for managing student entries, class schedules, and attendance tracking.</p>
+                <div class="bento-tags">
+                  <span class="tag tag-glow">PHP</span>
+                  <span class="tag tag-glow">MySQL</span>
+                  <span class="tag tag-glow">JavaScript</span>
+                </div>
+                <div class="bento-actions">
+                  <span class="bento-note">
+                    <i class="fas fa-folder-closed"></i> Personal project
+                  </span>
+                  <span class="bento-img-count">
+                    <span aria-hidden="true" data-lucide="images"></span>
+                    6 screenshots
+                  </span>
+                </div>
+              </div>
+              <div class="bento-gallery">
+                <button class="bento-thumb is-active" type="button" aria-label="Main view">
+                  <img src="assets/img/attendance/attendance_1.png" alt="" loading="lazy" />
+                </button>
+                <button class="bento-thumb" type="button" aria-label="Schedule">
+                  <img src="assets/img/attendance/attendance_2.png" alt="" loading="lazy" />
+                </button>
+                <button class="bento-thumb" type="button" aria-label="Students">
+                  <img src="assets/img/attendance/attendance_3.png" alt="" loading="lazy" />
+                </button>
+                <button class="bento-thumb" type="button" aria-label="Reports">
+                  <img src="assets/img/attendance/attendance_4.png" alt="" loading="lazy" />
+                </button>
+                <button class="bento-thumb" type="button" aria-label="Settings">
+                  <img src="assets/img/attendance/attendance_5.png" alt="" loading="lazy" />
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services" aria-label="Services">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up" data-aos-duration="650">
+          <p class="section-kicker">Services</p>
+          <h2 class="section-title">What I can do for your team or business.</h2>
+          <p class="section-subtitle">A clear set of services focused on outcomes and reliability.</p>
+          <div class="section-actions">
+            <a class="btn btn-primary" href="#contact">Let&apos;s Build Something Amazing Together</a>
+            <a class="btn btn-ghost" href="#projects">View Projects</a>
+          </div>
+        </div>
+
+        <div class="services-grid">
+          <div class="service" data-aos="fade-up" data-aos-delay="50" data-aos-duration="650">
+            <span class="service-icon" aria-hidden="true" data-lucide="layout"></span>
+            <h3 class="card-title">Web Application Development</h3>
+            <p class="muted">From responsive UI to business workflows—built for maintainability and speed.</p>
+          </div>
+          <div class="service" data-aos="fade-up" data-aos-delay="100" data-aos-duration="650">
+            <span class="service-icon" aria-hidden="true" data-lucide="bot"></span>
+            <h3 class="card-title">AI Integration & Automation</h3>
+            <p class="muted">AI-powered solutions that reduce repetitive tasks and improve operations.</p>
+          </div>
+          <div class="service" data-aos="fade-up" data-aos-delay="150" data-aos-duration="650">
+            <span class="service-icon" aria-hidden="true" data-lucide="wrench"></span>
+            <h3 class="card-title">IT Support & Troubleshooting</h3>
+            <p class="muted">Hands-on support for computers, printers, peripherals, and system issues.</p>
+          </div>
+          <div class="service" data-aos="fade-up" data-aos-delay="200" data-aos-duration="650">
+            <span class="service-icon" aria-hidden="true" data-lucide="server"></span>
+            <h3 class="card-title">System Maintenance & Network Diagnostics</h3>
+            <p class="muted">Preventive maintenance and network checks to keep work uninterrupted.</p>
+          </div>
+          <div class="service" data-aos="fade-up" data-aos-delay="250" data-aos-duration="650">
+            <span class="service-icon" aria-hidden="true" data-lucide="smartphone"></span>
+            <h3 class="card-title">Responsive Web Design</h3>
+            <p class="muted">Polished experiences that look great on mobile, tablet, and desktop.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="testimonials" aria-label="References">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up" data-aos-duration="650">
+          <p class="section-kicker">References</p>
+          <h2 class="section-title">Professional reference</h2>
+          <p class="section-subtitle">Available upon request.</p>
+        </div>
+
+        <div class="reference" data-aos="fade-up" data-aos-delay="100" data-aos-duration="650">
+          <div class="reference-card">
+            <div class="ref-top">
+              <div>
+                <p class="ref-name">Zoemar Baluarte</p>
+                <p class="muted">Professional reference</p>
+              </div>
+              <span class="chip">Contact</span>
+            </div>
+            <div class="ref-rows">
+              <a class="ref-row" href="mailto:zoemar.baluarte@gmail.com">
+                <span class="pill-icon" aria-hidden="true" data-lucide="mail"></span>
+                zoemar.baluarte@gmail.com
+              </a>
+              <a class="ref-row" href="tel:09958921089">
+                <span class="pill-icon" aria-hidden="true" data-lucide="phone"></span>
+                0995 892 1089
+              </a>
+            </div>
+          </div>
+
+          <div class="reference-note">
+            <h3 class="card-title">Want additional references?</h3>
+            <p class="muted">Send a quick message and I’ll share relevant contacts based on the role or project scope.</p>
+            <a class="btn btn-ghost" href="#contact">Request References</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-label="Contact">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up" data-aos-duration="650">
+          <p class="section-kicker">Contact</p>
+          <h2 class="section-title">Let’s build something reliable.</h2>
+          <p class="section-subtitle">Send a message and I’ll respond as soon as possible.</p>
+        </div>
+
+        <div class="contact-grid" data-aos="fade-up" data-aos-delay="100" data-aos-duration="650">
+          <div class="contact-cards">
+            <a class="contact-card" href="mailto:vinceyancy.cadutdut@gmail.com">
+              <span class="contact-icon" aria-hidden="true" data-lucide="mail"></span>
+              <div>
+                <p class="contact-title">Email</p>
+                <p class="muted">vinceyancy.cadutdut@gmail.com</p>
+              </div>
+            </a>
+            <a class="contact-card" href="tel:+639760487232">
+              <span class="contact-icon" aria-hidden="true" data-lucide="phone"></span>
+              <div>
+                <p class="contact-title">Phone</p>
+                <p class="muted">+63 976 048 7232</p>
+              </div>
+            </a>
+            <div class="contact-card" role="group" aria-label="Social links">
+              <span class="contact-icon" aria-hidden="true" data-lucide="link"></span>
+              <div>
+                <p class="contact-title">Social</p>
+                <div class="social-links">
+                  <a class="social" href="https://github.com/vinzie12" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                  </a>
+                  <a class="social" href="https://www.linkedin.com/in/vince-yancy-cadutdut-35478a146/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                  </a>
+                  <a class="social" href="https://web.facebook.com/vince.yancy" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                    Facebook
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-note">
+              <!-- <p class="muted">
+                This site is designed for GitHub Pages. The contact form opens your email client by default.
+                If you want a serverless inbox, I can wire this to Formspree or Netlify Forms.
+              </p> -->
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" placeholder="Project inquiry" required />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or role..." required></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">
+                <span class="btn-icon" aria-hidden="true" data-lucide="send"></span>
+                Send Message
+              </button>
+              <p class="muted tiny" id="formStatus" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" aria-label="Footer">
+    <div class="container footer-inner">
+      <p class="muted">© <span id="year"></span> Vince Yancy Cadutdut. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#top">Top</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a class="social" href="https://github.com/vinzie12" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a class="social" href="https://www.linkedin.com/in/vince-yancy-cadutdut-35478a146/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a class="social" href="https://web.facebook.com/vince.yancy" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="chat-widget" aria-label="Quick chat">
+    <div class="chat-panel" id="chatPanel" hidden>
+      <p class="chat-title">Quick Actions</p>
+      <p class="muted tiny">Tell me what you need—web app, automation, or IT support—and I’ll respond.</p>
+      <div class="chat-actions">
+        <a class="btn btn-sm btn-primary" href="#contact">Get In Touch</a>
+        <a class="btn btn-sm btn-ghost" href="mailto:vinceyancy.cadutdut@gmail.com">Email</a>
+        <a class="btn btn-sm btn-ghost" href="tel:+639760487232">Call</a>
+      </div>
+    </div>
+    <button class="chat-btn" type="button" id="chatToggle" aria-expanded="false" aria-controls="chatPanel">
+      <span class="btn-icon" aria-hidden="true" data-lucide="message-circle"></span>
+      Chat
+    </button>
+  </div>
+
+  <div class="pm-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="pmTitle" hidden>
+    <div class="pm-backdrop" data-close></div>
+    <div class="pm-container">
+
+      <header class="pm-header">
+        <div class="pm-header-left">
+          <span class="pm-number" id="pmNumber"></span>
+          <span class="pm-badge-pill" id="pmBadge"></span>
+        </div>
+        <h2 class="pm-title" id="pmTitle"></h2>
+        <button class="pm-close" type="button" data-close aria-label="Close modal">
+          <i class="fas fa-times"></i>
+        </button>
+      </header>
+
+      <div class="pm-gallery" id="pmGallery">
+        <div class="pm-main-img-wrap">
+          <img class="pm-main-img" id="pmMainImg" src="" alt="" />
+          <button class="pm-arrow pm-arrow-left" type="button" id="pmPrev" aria-label="Previous image">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="pm-arrow pm-arrow-right" type="button" id="pmNext" aria-label="Next image">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <span class="pm-counter" id="pmCounter"></span>
+          <span class="pm-caption" id="pmCaption"></span>
+        </div>
+        <div class="pm-thumbstrip" id="pmThumbstrip"></div>
+      </div>
+
+      <div class="pm-code-display" id="pmCodeDisplay" hidden>
+        <div class="pm-code-inner" id="pmCodeInner"></div>
+      </div>
+
+      <nav class="pm-tabs" role="tablist" aria-label="Project details">
+        <button class="pm-tab is-active" type="button" role="tab" aria-selected="true" data-tab="overview">Overview</button>
+        <button class="pm-tab" type="button" role="tab" aria-selected="false" data-tab="technical">Technical</button>
+        <button class="pm-tab" type="button" role="tab" aria-selected="false" data-tab="gallery">Gallery</button>
+        <button class="pm-tab" type="button" role="tab" aria-selected="false" data-tab="impact">Impact</button>
+      </nav>
+
+      <div class="pm-body">
+        <div class="pm-panel is-active" id="panelOverview" role="tabpanel">
+          <div class="pm-overview-grid">
+            <div class="pm-block">
+              <h3 class="pm-block-title">About This Project</h3>
+              <p class="pm-text" id="pmLongDesc"></p>
+            </div>
+            <div class="pm-block">
+              <h3 class="pm-block-title">The Problem</h3>
+              <p class="pm-text" id="pmProblem"></p>
+            </div>
+            <div class="pm-block">
+              <h3 class="pm-block-title">The Solution</h3>
+              <p class="pm-text" id="pmSolution"></p>
+            </div>
+            <div class="pm-block">
+              <h3 class="pm-block-title">Key Features</h3>
+              <ul class="pm-features" id="pmFeatures"></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="pm-panel" id="panelTechnical" role="tabpanel" hidden>
+          <div class="pm-tech-grid">
+            <div class="pm-block">
+              <h3 class="pm-block-title">Tech Stack</h3>
+              <div class="pm-stack" id="pmStack"></div>
+            </div>
+            <div class="pm-block">
+              <h3 class="pm-block-title">Architecture</h3>
+              <p class="pm-text" id="pmArchitecture"></p>
+            </div>
+            <div class="pm-block">
+              <h3 class="pm-block-title">Challenges & Solutions</h3>
+              <p class="pm-text" id="pmChallenges"></p>
+            </div>
+            <div class="pm-block pm-code-block" id="pmCodeSnippetWrap">
+              <h3 class="pm-block-title">Code Highlight</h3>
+              <pre class="pm-code-snippet" id="pmCodeSnippet"></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="pm-panel" id="panelGallery" role="tabpanel" hidden>
+          <div class="pm-gallery-full" id="pmGalleryFull"></div>
+        </div>
+
+        <div class="pm-panel" id="panelImpact" role="tabpanel" hidden>
+          <div class="pm-impact-grid">
+            <div class="pm-block">
+              <h3 class="pm-block-title">Results & Impact</h3>
+              <p class="pm-text" id="pmResults"></p>
+            </div>
+            <div class="pm-block">
+              <h3 class="pm-block-title">Lessons Learned</h3>
+              <p class="pm-text" id="pmLessons"></p>
+            </div>
+            <div class="pm-block">
+              <h3 class="pm-block-title">Future Enhancements</h3>
+              <p class="pm-text" id="pmFuture"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="pm-footer">
+        <div class="pm-footer-links" id="pmFooterLinks"></div>
+        <div class="pm-footer-nav">
+          <button class="btn btn-sm btn-ghost" type="button" id="pmPrevProject">
+            <i class="fas fa-arrow-left"></i> Previous
+          </button>
+          <a class="btn btn-sm btn-primary" href="#contact" data-close>
+            <i class="fas fa-envelope"></i> Interested? Contact me
+          </a>
+          <button class="btn btn-sm btn-ghost" type="button" id="pmNextProject">
+            Next <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="assets/js/loader.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/modal.js"></script>
+</body>
+</html>
