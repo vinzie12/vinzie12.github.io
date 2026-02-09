@@ -16,7 +16,7 @@ This repository contains my personal web developer portfolio showcasing my proje
 - MySQL
 
 ## Live Demo
-https://vinceyancy.github.io
+https://vinzie12.github.io
 
 ## Author
 Vince Yancy Cadutdut
