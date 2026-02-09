@@ -1214,102 +1214,7 @@
     });
   };
 
-  const initResumeDownload = () => {
-    const btns = qsa('#resumeBtn, #resumeBtn2');
-    if (!btns.length) return;
-
-    btns.forEach((btn) => {
-      btn.addEventListener('click', async () => {
-        const jsPDF = window.jspdf?.jsPDF;
-        if (!jsPDF) {
-          alert('Resume generator not available (jsPDF failed to load).');
-          return;
-        }
-
-        const doc = new jsPDF({ unit: 'pt', format: 'a4' });
-        const margin = 48;
-        let y = margin;
-
-        const title = 'Vince Yancy Cadutdut';
-        const subtitle = 'Web Developer & IT Support Specialist';
-        const contact = 'Aurora, Zamboanga Del Sur, Philippines | vinceyancy.cadutdut@gmail.com | +63 976 048 7232';
-
-        doc.setFont('helvetica', 'bold');
-        doc.setFontSize(22);
-        doc.text(title, margin, y);
-        y += 22;
-
-        doc.setFont('helvetica', 'normal');
-        doc.setFontSize(12);
-        doc.text(subtitle, margin, y);
-        y += 18;
-
-        doc.setTextColor(100);
-        doc.setFontSize(10);
-        doc.text(contact, margin, y);
-        doc.setTextColor(0);
-        y += 22;
-
-        doc.setFont('helvetica', 'bold');
-        doc.setFontSize(12);
-        doc.text('Profile', margin, y);
-        y += 14;
-
-        doc.setFont('helvetica', 'normal');
-        doc.setFontSize(10.5);
-        const profile =
-          'Web developer with hands-on experience building and maintaining web-based applications, including AI agents and automation. Strong troubleshooting skills for computer systems, networks, and peripherals. ESL teaching background supports clear, effective communication.';
-        const profileLines = doc.splitTextToSize(profile, 595 - margin * 2);
-        doc.text(profileLines, margin, y);
-        y += profileLines.length * 12 + 10;
-
-        doc.setFont('helvetica', 'bold');
-        doc.setFontSize(12);
-        doc.text('Experience', margin, y);
-        y += 14;
-
-        doc.setFont('helvetica', 'normal');
-        doc.setFontSize(10.5);
-        const expLines = [
-          'Citistar Trade Development Corporation — Web Developer & IT Support (2024–2026)',
-          '• Developed and maintained web-based applications for business operations.',
-          '• Leveraged AI agents and automation tools; integrated AI-powered task automation.',
-          '• Provided IT support (systems, printers, and network connectivity).',
-          '',
-          'Various Platforms — Online ESL Teacher (2019–2024)',
-          '• Improved communication and adaptability across digital platforms.',
-          '',
-          'Analog Devices Inc., Philippines — Test Engineering Intern (2016)',
-          '• Assisted database management and test troubleshooting using Python.'
-        ];
-        expLines.forEach((line) => {
-          const lines = doc.splitTextToSize(line, 595 - margin * 2);
-          doc.text(lines, margin, y);
-          y += lines.length * 12;
-          if (y > 770) {
-            doc.addPage();
-            y = margin;
-          }
-        });
-
-        if (y < 740) y += 8;
-        doc.setFont('helvetica', 'bold');
-        doc.setFontSize(12);
-        doc.text('Skills', margin, y);
-        y += 14;
-
-        doc.setFont('helvetica', 'normal');
-        doc.setFontSize(10.5);
-        const skills =
-          'HTML, CSS, JavaScript, Responsive Web Design, Web Application Development, Cross-browser Compatibility, Hardware Troubleshooting, Printer Configuration & Repair, Network Diagnostics, System Maintenance, Communication, Problem Solving, Team Collaboration, Time Management';
-        const skillLines = doc.splitTextToSize(skills, 595 - margin * 2);
-        doc.text(skillLines, margin, y);
-
-        doc.save('Vince-Yancy-Cadutdut-Resume.pdf');
-      });
-    });
-  };
-
+  
   const initProjectGallery = () => {
     qsa('.bento-gallery').forEach(gallery => {
       const card = gallery.closest('.bento-card');
@@ -1343,7 +1248,6 @@
     initSkillQuiz();
     initContactForm();
     initChatWidget();
-    initResumeDownload();
     initProjectGallery();
   };
 
